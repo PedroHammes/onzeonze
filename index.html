@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        onze: {
+                            50: '#f0e7da',
+                            100: '#e1d9cb',
+                            700: '#a04f34',
+                            950: '#62392c'
+                        },
+                        neutral: {
+                            800: '#262626'
+                        } 
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Onze Onze</title>
+</head>
+<body class="h-screen px-4 bg-onze-50 flex flex-col gap-4">
+    <nav
+        class="flex flex-row p-2 justify-between"
+    >
+        <p>Logo</p>
+        <p>Início</p>
+        <p>Sobre</p>
+        <p>Serviços</p>
+        <p>Contato</p>
+    </nav>
+
+    <!-- Banner -->
+    <div class="rounded-lg p-2 bg-onze-700 flex flex-row justify-between">
+        <div>Logo</div>
+        <h1 class="text-2xl text-right">Criamos identidades que atraem, transformam e conectam.</h1>
+    </div>
+
+    <section class="rounded-lg p-2 bg-onze-700 flex flex-row gap-4">
+        <div class="rounded-lg bg-onze-100">Nossos serviços</div>
+        <div class="rounded-lg bg-onze-100">Portfólio</div>
+    </section>
+
+    <!-- Sobre nós -->
+    <section class="rounded-lg p-2 bg-onze-700 flex flex-col gap-4">
+        
+        <!-- Propósito -->
+        <div class="flex flex-row gap-4">
+            <div class="border-2 border-neutral-800 rounded-lg bg-onze-100">Imagem</div>
+            <div class="rounded-lg bg-onze-100 flex flex-col gap-4">
+                <h1 class="border-2 border-neutral-800 rounded-lg text-2xl">Propósito OnzeOnze</h1>
+                <p class="border-2 border-neutral-800 rounded-lg">
+                    A OnzeOnze nasceu com o propósito de transformar marcas em universos.
+    
+                    Acreditamos que tudo está conectado e na a energia por trás das horas iguais.  
+                    11:11 carrega uma mensagem poderosa.
+                    Esse número representa bons presságios, conexões profundas e a importância de focar em energias positivas e no futuro.
+                    Para nós, o mundo além da matéria é pura expansão e vibração — e é essa energia que buscamos trazer para cada marca que ajudamos a construir.
+                </p>
+            </div>
+        </div>
+
+        <!-- Banner -->
+        <div>
+            <h1 class="rounded-lg bg-onze-100 text-2xl"> 
+                Valorizamos a autenticidade, 
+                a transparência e o desejo de criar conexões reais.
+            </h1>
+        </div>
+
+        <!-- Quem somos -->
+        <div class="flex flex-row gap-4">
+            <div class="rounded-lg bg-onze-100 flex flex-col gap-4">
+                <h1 class="border-2 border-neutral-800 rounded-lg text-2xl">Quem está por trás?</h1>
+                <p class="border-2 border-neutral-800 rounded-lg">
+                    Por trás da OnzeOnze estão Maria e Rafaella.
+                Amigas e sócias, elas se conheceram na faculdade de Publicidade e Propaganda, onde descobriram uma afinidade única. 
+
+                O horário 11:11 sempre foi especial para ambas, carregando um significado profundo nas suas vidas,
+                e se tornou a inspiração perfeita para o nome da agência.
+                Apaixonadas por comunicação, marketing e branding, elas uniram suas energias e visões para criar um espaço onde marcas podem crescer,
+                se transformar e se conectar com o mundo de maneira autêntica e expansiva.
+                </p>
+            </div>
+            <div class="border-2 border-neutral-800 rounded-lg bg-onze-100">Imagem</div>
+        </div>
+    </section>
+
+
+    <!-- Serviços -->
+    <section class="rounded-lg p-2 bg-onze-700 flex flex-row flex-wrap gap-4">
+        <div class="rounded-lg bg-onze-100">
+            <p>Serviço 1</p>
+        </div>
+        <div class="rounded-lg bg-onze-100">
+            <p>Serviço 2</p>
+        </div>
+        <div class="rounded-lg bg-onze-100">
+            <p>Serviço 3</p>
+        </div>
+    </section>
+
+    <footer class="bg-onze-700 flex flex-row flex-wrap gap-4">
+        <div>Logo</div>
+        <div>
+            <div>
+                <p>Entre em contato</p>
+                <p>ola@onzeonze.com</p>
+            </div>
+            <div>
+                <p>WhatsApp | Instagram | Behance</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
