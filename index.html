@@ -26,8 +26,9 @@
     <title>Onze Onze</title>
 </head>
 <body class="h-screen px-4 bg-onze-50 flex flex-col gap-4">
-    <nav
-        class="flex flex-row p-2 justify-between"
+    
+    <nav id="navbar"
+        class="h-8 flex flex-row p-2 justify-between items-center border-2 border-neutral-800"
     >
         <p>Logo</p>
         <p>Início</p>
@@ -37,22 +38,41 @@
     </nav>
 
     <!-- Banner -->
-    <div class="rounded-lg p-2 bg-onze-700 flex flex-row justify-between">
-        <div>Logo</div>
-        <h1 class="text-2xl text-right">Criamos identidades que atraem, transformam e conectam.</h1>
+    <div class="h-auto rounded-lg p-4 bg-onze-700 flex flex-col gap-4
+                sm:flex-row
+                sm:items-center">
+        <div class="h-60 rounded-lg bg-onze-100
+                    sm:w-96"
+        >Logo</div>
+        <div class="rounded-lg">
+            <h1 class="h-32 text-2xl text-right text-onze-100">Criamos identidades que atraem, transformam e conectam.</h1>
+        </div>
     </div>
 
-    <section class="rounded-lg p-2 bg-onze-700 flex flex-row gap-4">
-        <div class="rounded-lg bg-onze-100">Nossos serviços</div>
-        <div class="rounded-lg bg-onze-100">Portfólio</div>
+
+    <section class="h-auto rounded-lg p-4 bg-onze-700 flex flex-col gap-4
+                    sm:flex-row">
+        <div class="h-40 rounded-lg bg-onze-100
+                    sm:min-w-52
+                    md:min-w-64
+                    lg:min-w-80
+                    xl:min-w-96"
+        >Nossos serviços</div>
+        <div class="h-40 rounded-lg bg-onze-100
+                    sm:w-full"
+        >Portfólio</div>
     </section>
 
     <!-- Sobre nós -->
-    <section class="rounded-lg p-2 bg-onze-700 flex flex-col gap-4">
+    <section class="rounded-lg p-4 bg-onze-700 flex flex-col gap-4">
         
         <!-- Propósito -->
-        <div class="flex flex-row gap-4">
-            <div class="border-2 border-neutral-800 rounded-lg bg-onze-100">Imagem</div>
+        <div class="flex flex-col gap-4
+                    sm:flex-row"
+        >
+            <div class="h-40 border-2 border-neutral-800 rounded-lg bg-onze-100
+                        sm:h-96"
+            >Imagem</div>
             <div class="rounded-lg bg-onze-100 flex flex-col gap-4">
                 <h1 class="border-2 border-neutral-800 rounded-lg text-2xl">Propósito OnzeOnze</h1>
                 <p class="border-2 border-neutral-800 rounded-lg">
@@ -67,15 +87,16 @@
         </div>
 
         <!-- Banner -->
-        <div>
-            <h1 class="rounded-lg bg-onze-100 text-2xl"> 
+        <div class="h-26 flex flex-row items-center bg-onze-950">
+            <h1 class="rounded-lg bg-onze-100 text-2xl text-center"> 
                 Valorizamos a autenticidade, 
                 a transparência e o desejo de criar conexões reais.
             </h1>
         </div>
 
         <!-- Quem somos -->
-        <div class="flex flex-row gap-4">
+        <div class="flex flex-col gap-4">
+            <div class="h-40 border-2 border-neutral-800 rounded-lg bg-onze-100">Imagem</div>
             <div class="rounded-lg bg-onze-100 flex flex-col gap-4">
                 <h1 class="border-2 border-neutral-800 rounded-lg text-2xl">Quem está por trás?</h1>
                 <p class="border-2 border-neutral-800 rounded-lg">
@@ -88,25 +109,24 @@
                 se transformar e se conectar com o mundo de maneira autêntica e expansiva.
                 </p>
             </div>
-            <div class="border-2 border-neutral-800 rounded-lg bg-onze-100">Imagem</div>
         </div>
     </section>
 
 
     <!-- Serviços -->
-    <section class="rounded-lg p-2 bg-onze-700 flex flex-row flex-wrap gap-4">
-        <div class="rounded-lg bg-onze-100">
+    <section class="rounded-lg p-4 bg-onze-700 flex flex-col flex-wrap gap-4">
+        <div class="h-40 rounded-lg bg-onze-100">
             <p>Serviço 1</p>
         </div>
-        <div class="rounded-lg bg-onze-100">
+        <div class="h-40 rounded-lg bg-onze-100">
             <p>Serviço 2</p>
         </div>
-        <div class="rounded-lg bg-onze-100">
+        <div class="h-40 rounded-lg bg-onze-100">
             <p>Serviço 3</p>
         </div>
     </section>
 
-    <footer class="bg-onze-700 flex flex-row flex-wrap gap-4">
+    <footer class="rounded-lg p-4 bg-onze-700 flex flex-row flex-wrap gap-4">
         <div>Logo</div>
         <div>
             <div>
