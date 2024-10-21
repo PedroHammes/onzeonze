@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    fontFamily: {
+                        inter: ["Inter", "sans-serif"]
+                    },
                     colors: {
                         onze: {
                             50: '#f0e7da',
@@ -25,7 +31,8 @@
     </script>
     <title>Onze Onze</title>
 </head>
-<body class="h-screen px-4 bg-onze-50 flex flex-col gap-4">
+<body class="h-screen px-4 bg-onze-50 flex flex-col gap-4
+                font-inter">
     
     <nav id="navbar"
         class="h-8 flex flex-row p-2 justify-between items-center border-2 border-neutral-800"
@@ -46,7 +53,9 @@
                     md:min-w-64
                     lg:min-w-80
                     xl:min-w-96"
-        >Logo</div>
+        >
+            Logo
+        </div>
         <div class="rounded-lg">
             <h1 class="h-32 text-2xl text-right text-onze-100">Criamos identidades que atraem, transformam e conectam.</h1>
         </div>
