@@ -32,13 +32,15 @@
     </script>
     <title>Onze Onze</title>
 </head>
-<body class="h-screen px-4 bg-onze-50 flex flex-col gap-4
+<body class="h-screen px-4 pt-10 bg-onze-50 flex flex-col gap-4
                 font-inter">
     
     <nav id="navbar"
-        class="h-8 flex flex-row p-2 justify-between items-center border-2 border-neutral-800"
+        class="fixed top-0 left-0 right-0 h-8 rounded-b-lg border-2 border-neutral-800 bg-onze-50 flex flex-row p-2 justify-between items-center transition-transform duration-500"
     >
-        <a href="#home">Logo</a>
+    <!-- class="h-8 flex flex-row p-2 justify-between items-center border-2 border-neutral-800" -->
+    <!-- class="fixed top-0 left-0 right-0 h-16 bg-onze-50 flex flex-row p-2 justify-between items-center border-b-2 border-neutral-800 transition-transform duration-500" -->
+        <a href="#logo">Logo</a>
         <a href="#home">Início</a>
         <a href="#about-us">Sobre</a>
         <a href="#services">Serviços</a>
@@ -46,7 +48,7 @@
     </nav>
 
     <!-- Banner -->
-    <div class="h-auto rounded-lg p-4 bg-onze-700 flex flex-col gap-4
+    <div id="logo" class="h-auto rounded-lg p-4 bg-onze-700 flex flex-col gap-4
                 sm:flex-row
                 sm:items-center">
         <div class="h-60 rounded-lg bg-onze-100
@@ -180,5 +182,25 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+    
+        window.addEventListener('scroll', function () {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+            if (scrollTop > lastScrollTop) {
+                // Rolando para baixo - Esconde a navbar
+                navbar.style.transform = 'translateY(-100%)';
+            } else {
+                // Rolando para cima - Mostra a navbar
+                navbar.style.transform = 'translateY(0)';
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Evita valores negativos
+        });
+    </script>
+    
 </body>
 </html>
