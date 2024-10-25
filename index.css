@@ -1,3 +1,12 @@
+
+@font-face {
+    font-family: 'coolvetica';
+    src: url('./style/coolvetica/coolvetica-rg.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
